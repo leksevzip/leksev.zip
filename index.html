@@ -8,14 +8,18 @@
 <style>	
 	body {
 		zoom: 150%;
+		margin: 10px auto;
+		width: 40vw;
+		overflow: auto;
+		height: auto;
 	}
 	
 	body::before {
 		content: '';
 		background-image: url('imgs/background.png');
-		background-repeat: repeat;
-		background-size: 20% auto;
-		opacity: 0.2;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -23,88 +27,102 @@
 		height: 100%;
 		z-index: -1;
 	}
+
+	.grid {
+		margin: 10px auto;
+		gap: 10px;
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
 </style>
   
 <body>
-  <div class="window" style="margin: 0px auto; width: 30vw;">
-	<div class="title-bar" style="padding: 4px; display: flex; justify-content: center; align-items: center; gap: 5px;">
-		<a style="color: #ffffff;" href="https://leksev.zip/">Home</a>
-		<a style="color: #ffffff;" href="https://leksev.zip/games">Games</a>
-		<a style="color: #ffffff;" href="https://leksev.zip/web">Web</a>
+  <div class="window">
+	<div class="title-bar" style="padding: 4px; display: flex; justify-content: center; gap: 5px;">
+		<a style="color: #ffffff;" href="index.html">Home</a>
+		<a style="color: #ffffff;" href="soft/index.html">Software</a>
+		<a style="color: #ffffff;" href="games/index.html">Games</a>
+		<a style="color: #ffffff;" href="web/index.html">Web</a>
+		<a style="color: #ffffff;" href="about/index.html">About</a>
 	</div>
   </div>
   
-  <div class="window" style="margin: 10px auto; width: 30vw; height: auto">
-    <div class="title-bar">
-      <div class="title-bar-text">
-        leksev software labs
-      </div>
-    </div>
-	<div class="window-body">
-		<div class="window" style="margin: 10px auto;">
+  <div class="grid">
+	<div>
+		<div class="window">
 			<div class="title-bar">
-				<div class="title-bar-text">
-					NemoScript
-				</div>
+				<div class="title-bar-text">That's me!</div>
 			</div>
 			<div class="window-body">
-				<div class="field-border" style="padding: 10px">
-					Fully written on C# programming language (kind of). This project i made in spring break. Don't expect too much from this, it's been made just for fun.
-				</div>
-				<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px; flex-wrap: wrap;">
-					<div style="display: flex; gap: 3px; flex-wrap: wrap;">
-						<button onclick="window.open('https://github.com/leksevzip/NemoScript/releases/download/Release/nemoscript-beta-win-x64.zip', '_blank');">Windows</button>
-						<button onclick="window.open('https://github.com/leksevzip/NemoScript/releases/download/Release/nemoscript-beta-linux-x64.zip', '_blank');">Linux</button>
-					</div>
-					<button onclick="window.open('https://github.com/leksevzip/NemoScript', '_blank');">GitHub Page</button>
-				</div>
-			</div>
-		</div>
-		
-		<div class="window" style="margin: 10px auto;">
-			<div class="title-bar">
-				<div class="title-bar-text">
-					BruhTerminal.API
-				</div>
-			</div>
-			<div class="window-body">
-				<div class="field-border" style="padding: 10px">
-					Easy and lightweight C# TUI library that can be useful for whipping up quick personal utilities or tools.
-				</div>
-				<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px; flex-wrap: wrap;">
-					<div style="display: flex; gap: 3px; flex-wrap: wrap;">
-						<button onclick="window.open('https://github.com/leksevzip/bruhterminal-api/releases/download/v1.0.2/BruhTerminal.API.dll', '_blank');">DLL</button>
-					</div>
-					<button onclick="window.open('https://github.com/leksevzip/bruhterminal-api', '_blank');">GitHub Page</button>
-				</div>
-			</div>
-		</div>
-
-		<div class="window" style="margin: 10px auto;">
-			<div class="title-bar">
-				<div class="title-bar-text">
-					ChatGPT for Windows Phone 8.1
-				</div>
-			</div>
-			<div class="window-body">
-				<div class="field-border" style="padding: 10px">
-					Light and minimalistic ChatGPT client for Windows Phone 8.1
-				</div>
-				<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px; flex-wrap: wrap;">
-					<div style="display: flex; gap: 3px; flex-wrap: wrap;">
-						<button onclick="window.open('https://github.com/leksevzip/ChatGPT-WP8.1/releases/download/v1.0.0.0/ChatGPT.for.Windows.Phone.8.1.appx', '_blank');">Windows Phone</button>
-					</div>
-					<div style="display: flex; gap: 3px; flex-wrap: wrap;">
-						<button onclick="window.open('https://store.live.net.co/app/354', '_blank');">Live Store Page</button>
-						<button onclick="window.open('https://github.com/leksevzip/ChatGPT-WP8.1', '_blank');">GitHub Page</button>
-					</div>
-				</div>
+				<strong style="font-size: 20px;">Leksev Dotzip</strong>
+				<a href="https://www.imood.com/users/leksevzip" style="margin-left: -3.5px;"><img src="https://moods.imood.com/display/uname-leksevzip/trans-1/imood.gif" alt="The current mood of leksevzip at www.imood.com" style="width: 50%; height: 50%;" border="0"></a>
+				<p>	
+					Gender: Male
+					<br></br>
+					Age: 14 y.o. (what a boy)
+					<br></br>
+					Birthday: January 14
+					<br></br>
+					IQ: 42
+					<br></br>	
+					Location: Federation of United States and Territory 42
+					<br></br>
+					Likes: Coding, Technology, Procrastination
+					<br></br>
+					Dislikes: Touching grass
+					<br></br>
+					My beloved: Godot Game Engine
+				</p>
+				<img src="imgs/leksev.zip.jpg" alt="leksev.zip">
+				<a href="https://github.com/leksevzip"><img src="imgs/github.png" alt="My Github" style="width: 15%; height: 15%;"></a>
+				<a href="https://leksevzip.itch.io"><img src="imgs/itch.png" alt="My Itch" style="width: 15%; height: 15%;"></a>
+				<a href="https://leksevzip.newgrounds.com"><img src="imgs/newgrounds.png" alt="My Newgrounds" style="width: 15%; height: 15%;"></a>
+				<p>leksevzip@gmail.com</p>
 			</div>
 		</div>
 	</div>
-	<div class="status-bar">
-		<p class="status-bar-field" style="text-align: center;">copyright leksev software labs, 2026</p>
+
+	<div>
+		<div class="window" style="height: fit-content;">
+			<div class="title-bar">
+				<div class="title-bar-text">Greeting Message.exe</div>
+			</div>
+			<div class="window-body">
+				<div class="field-border" style="padding: 8px;">
+					<strong style="font-size: 20px;">Oh, hello there! Welcome to leksev.zip!</strong>
+					<p style="font-size: 13px;">
+						Uhm, I don't really know what to put there but I probably should say something about myself.
+						<br style="margin-top: 2px;">
+						I'm leksev.zip, an archive, I'm a russian guy who does stuff on C#, <s>Clickteam Fusion</s>, <s>Unity</s>, Godot 
+						<br style="margin-top: 2px;">
+						I like making software and games.
+						<br style="margin-top: 2px;">
+						Also I like imagining stuff so this website has a lore, which you can see in About page.
+						<br style="margin-top: 2px;">
+						And I forgot to mention that I like to draw, maybe I'll make "Art" category someday?
+						<br style="margin-top: 2px;">
+						I make music sometimes (you can check them out in my newgrounds). Maybe I'll make a category for it too on this website.
+						<br style="margin-top: 2px;">
+						That's... all? I really don't know what to put here, lol:p
+						<br style="margin-top: 2px;">
+						Feel free to send me a letter to my email, it's on the left window
+						<br style="margin-top: 2px;">
+						King regards,
+						<br style="margin-top: 10px;">
+						-leksev.zip
+					</p>
+				</div>
+			</div>
+		</div>
 	</div>
   </div>
+  
 </body>
 </html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>leksev software labs</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://unpkg.com/98.css" />
+</head>
+<style>	
+	body {
+		zoom: 150%;
+		margin: 10px auto;
+		width: 40vw;
+		overflow: auto;
+		height: auto;
+	}
+	
+	body::before {
+		content: '';
+		background-image: url('imgs/background.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+
+	.grid {
+		margin: 10px auto;
+		gap: 10px;
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+</style>
+  
+<body>
+  <div class="window">
+	<div class="title-bar" style="padding: 4px; display: flex; justify-content: center; gap: 5px;">
+		<a style="color: #ffffff;" href="../index.html">Home</a>
+		<a style="color: #ffffff;" href="../soft/index.html">Software</a>
+		<a style="color: #ffffff;" href="../games/index.html">Games</a>
+		<a style="color: #ffffff;" href="../web/index.html">Web</a>
+		<a style="color: #ffffff;" href="../about/index.html">About</a>
+	</div>
+  </div>
+
+	<div>
+		<div class="window" style="margin: 10px auto; height: fit-content;">
+			<div class="title-bar">
+				<div class="title-bar-text">lore.txt</div>
+			</div>
+			<div class="window-body">
+				<div class="field-border" style="padding: 8px;">
+					<strong style="font-size: 20px;">About leksev software labs</strong>
+					<p style="font-size: 13px;">
+						leksev software labs (officially leksev software labs IO) is a software development company founded in 2024. It was formed following a major corporate restructuring of Ksen Software, Inc. (its predecessor).
+						<br style="margin-top: 2px;">
+						It's based in two countries <s>in two different universes</s>: Federation of United States (FUS) and Territory 42 (T42). And also, it's owned by a holding called Ksen, Inc.
+						<br style="margin-top: 2px;">
+						The company specializes in making software mostly in C# (though other languages are used as well). It covers both B2B (Business to Business) and B2C (Business to Consumer) stuff.
+					</p>
+					<strong style="font-size: 20px;">About Half-Baked Games, Inc.</strong>
+					<p style="font-size: 13px;">
+						Half-Baked Games, Inc. (officially Half-Baked Games DO) is a division of leksev software labs founded in 2025 as a successor to Ksen Games.
+						<br style="margin-top: 2px;">
+						It's based in Territory 42 and specializes in developing video games. 
+						<br style="margin-top: 2px;">
+						They used to make games in Unity (after Clickteam Fusion on Ksen Games era). But they switched to Godot and they're still using it.
+					</p>
+					<strong style="font-size: 20px;">About 1PO Networks</strong>
+					<p style="font-size: 13px;">
+						1PO Networks (1PO stands for One Person Online; officially 1PO Networks DO) is a division of leksev software labs founded in 2024 as frontend, backend and IoT division.
+						<br style="margin-top: 2px;">
+						Just like HBG it's based in Territory 42 and specializes in making websites, APIs, VPNs and other web stuff.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+  
+</body>
+</html>
